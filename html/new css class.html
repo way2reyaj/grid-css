@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 15px;
+      }
+
+      li {
+        list-style-position: inside;
+      }
+
+      .main {
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+          "head head head head"
+          "mainContent sidebar sidebar sidebar"
+          "subContent sidebar sidebar sidebar"
+          "footer footer footer footer";
+      }
+
+      .item {
+        background-color: yellow;
+        border: 1px solid black;
+        padding: 10px;
+
+      }
+
+      .head {
+        grid-area: head;
+      }
+
+      .main-co {
+        grid-area: mainContent;
+      }
+
+      .sub-co {
+        grid-area: subContent;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .mi {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+    </style>
+  </head>
+
+  <body>
+
+
+    <div class="mi">
+      <div class="info">
+        <h1>hello jee</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum, libero soluta doloribus
+          laudantium necessitatibus natus itaque similique illum repudiandae corrupti, numquam eveniet quae veritatis?
+        </p>
+      </div>
+      <div class="im">
+        <img
+          src="https://images.unsplash.com/photo-1703342181521-bae93c2a4ce9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8"
+          alt="">
+      </div>
+    </div>
+    <div class="main">
+
+      <!-- this is header section -->
+      <div class="head item">
+        <h1>The Web Logo</h1>
+      </div>
+
+
+
+      <!-- --------------------- -->
+      <div class="main-co item">
+        <h2>Main Article Area</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque saepe eius corrupti excepturi! Optio dolorum
+          sit aut accusamus sint voluptates, minus eligendi itaque commodi doloribus?</p>
+
+      </div>
+
+
+      <div class="sidebar item">
+        <ol>
+          <li>About</li>
+          <li>Latest</li>
+          <li>More Info</li>
+          <li>Others</li>
+        </ol>
+      </div>
+
+
+      <!-- -------------------------------- -->
+      <div class="sub-co item">
+        <h3>Sub Article Area</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque saepe eius corrupti excepturi! Optio dolorum
+          sit aut accusamus sint voluptates, minus eligendi itaque commodi doloribus?</p>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="footer item">
+        <h4>Devlop By Anonymous </h4>
+        <p>All Rights Reserved</p>
+      </div>
+
+
+    </div>
+
+  </body>
+
+</html>
